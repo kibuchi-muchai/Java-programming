@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
+        // scanner reads input from user
         Scanner input = new Scanner(System.in);
 
         //get the users surname and age
@@ -14,5 +15,16 @@ public class App {
         String surname = input.nextLine();
         System.out.println("Enter your age:");
         int age = input.nextInt();
+
+        //print the number of characters in the users surname
+        System.out.println("Your surname has " + surname.length() + "characters");
+
+        //check if the users age is even or odd
+        if (age % 2 == 0){
+            System.out.println("Your age is even");
+
+        }else {
+            System.out.println("Your age is odd");
+        }
 
 }}
