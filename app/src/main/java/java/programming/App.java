@@ -7,5 +7,12 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        //get the users surname and age
+        System.out.println("Enter your surname:");
+        String surname = input.nextLine();
+        System.out.println("Enter your age:");
+        int age = input.nextInt();
 
 }}
